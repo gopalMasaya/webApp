@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>base app</title>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+	<script src="page1.js"></script>
+	<script src="signin.js"></script>
+	<script src="login.js"></script>
+	<script src="admin.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+<div  id="cdiv">
+	<canvas id="myChart"></canvas>
+</div>
+
+
+<div class="dropdown" id="courses">
+  <button class="dropbtn" id="bc">קורסים</button>
+  <div class="dropdown-content">
+    <a id="1">קורס ערב</a>
+    <a id="2">קורס בוקר</a>
+    <a id="3">קורסים מתקדמים</a>
+  </div>
+</div>
+
+	<style>
+
+	.dropdown{
+		 display: inline-block;
+		 position:absolute;
+		 text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+		 width:12%;
+		 left:72%;
+		 top: 19%;
+	}
+	#bc {
+
+  background-color: #4CAF50;
+	background-color: rgb(255,255,220);
+	width:12%;
+	height:6%
+  color: white;
+  font-size: 1.2em;
+	text-align: right;
+	line-height: 20px;
+  border: none;
+}
+	.dropdown-content {
+	  display: none;
+	  position: relative;
+		text-align: right;
+		top:20px;
+	  background-color: #f1f1f1;
+	  min-width: 15%;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+		background-color: rgb(255,255,200);
+	  text-decoration: none;
+	  display: block;
+	}
+.dropdown:hover{
+-webkit-transition: 0.5s;
+color:blue;
+border-color: rgb(95,65,65);
+box-shadow: 10px 10px 8px #888888;
+width:17%;
+}
+
+.dropdown:hover{
+-webkit-transition: 0.5s;
+color:blue;
+background-color: rgb(255,255,200);
+border-color: rgb(95,65,65);
+box-shadow: 10px 10px 8px #888888;
+
+}
+
+.dropdown:hover button:not(:hover){
+-webkit-transition: 0.5s;
+color:blue;
+border-color: rgb(95,65,65);
+box-shadow: 0px 0px 0px #888888;
+
+}
+
+	.dropdown-content a:hover {background-color: rgba(20,20,200,0.6);}
+
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {display: block;}
+
+	/* Change the background color of the dropdown button when the dropdown content is shown */
+	.dropdown:hover .dropbtn {background-color: rgb(255,255,200);}
+
+
+	#cdiv{
+width: 0px;
+height:0px;
+}
+
+		body {
+			margin:0;
+			padding:0;
+			overflow: scroll;
+		}
+		canvas {
+			margin:auto;
+			width:auto;
+			height:100%;
+			overflow:scroll;
+		 	}
+	</style>
+</head>
+
+<body>
+</body>
+</html>
