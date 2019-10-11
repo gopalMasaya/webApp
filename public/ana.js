@@ -229,14 +229,15 @@ this.style('box-shadow','0px 0px 0px #888888')
 
 }
 
+	 // your firebase code here
 	var firebaseConfig = {
-			apiKey: apkey[0],
-			authDomain:  apkey[1],
-			databaseURL: "https://naturecare-2fdc0.firebaseio.com",
-			projectId: "naturecare-2fdc0",
+			apiKey: ********,
+			authDomain: **********,
+			databaseURL: **********,
+			projectId: **********,
 			storageBucket: "",
-			messagingSenderId: "987971651716",
-			appId: "1:987971651716:web:ff6d1b4c24f81be4"
+			messagingSenderId: **********,
+			appId: **********
 		};
 		// Initialize Firebase
 		firebase.initializeApp(firebaseConfig);
